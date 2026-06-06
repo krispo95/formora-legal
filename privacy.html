@@ -10,7 +10,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="meta">
-  Last updated: 5 June 2026 ·
+  Last updated: 6 June 2026 ·
   <a href="privacy.ru.html">Русский</a> ·
   <a href="privacy.es.html">Español</a>
 </p>
@@ -41,7 +41,13 @@
 <p>If a crash occurs, an anonymised crash report (technical details such as the file name and line where the crash happened, iOS version, and device model) may be collected to help us fix the issue. These reports contain no measurements, photos, or personally identifiable information. Crash reporting can be disabled in the app's Settings.</p>
 
 <h3>2.7 Anonymous usage analytics</h3>
-<p>The app sends anonymous usage events (e.g. "user opened the Statistics screen", "user tapped a locked PRO feature") so we can understand which parts of Formora are used and where people get stuck. Each event carries app version, OS version, and a random per-install identifier; <strong>no measurement values, photos, names, or any identifier tied to your Apple ID, email, or device serial are ever sent</strong>. The per-install identifier is generated locally on first launch and is not linked to any other service. You can opt out at any time in <em>Settings → Privacy → Send anonymous usage data</em>; turning it off stops new events immediately.</p>
+<p>The app sends anonymous usage events (e.g. "user opened the Statistics screen", "user tapped a locked PRO feature") to <strong>PostHog Cloud (EU region, hosted in Frankfurt)</strong> so we can understand which parts of Formora are used and where people get stuck. Each event carries:</p>
+<ul>
+  <li>App version, OS version, device model and screen size, timezone and locale.</li>
+  <li>A random per-install identifier generated locally on first launch — <strong>not linked to your Apple ID, email, device serial number, or any third-party service</strong>.</li>
+  <li>Your IP address, which PostHog converts to a coarse country/city before discarding the raw IP. (We are working on disabling IP collection entirely at the project level.)</li>
+</ul>
+<p><strong>No measurement values, photos, names, dates of birth, or weights are ever sent.</strong> The legal basis for this processing under GDPR is our legitimate interest in understanding product usage; you can opt out at any time in <em>Settings → Privacy → Send anonymous usage data</em>, which immediately stops new events and clears the per-install identifier from our analytics backend.</p>
 
 <h2>3. What we do NOT collect</h2>
 <ul>

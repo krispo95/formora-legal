@@ -10,7 +10,7 @@
 
 <h1>Política de privacidad</h1>
 <p class="meta">
-  Última actualización: 5 de junio de 2026 ·
+  Última actualización: 6 de junio de 2026 ·
   <a href="privacy.html">English</a> ·
   <a href="privacy.ru.html">Русский</a>
 </p>
@@ -41,7 +41,13 @@
 <p>Si la app sufre un fallo, puede generarse un informe anonimizado (detalles técnicos como el archivo y línea donde ocurrió, versión de iOS, modelo del dispositivo) para ayudarnos a corregirlo. Estos informes no contienen medidas, fotos ni información personal identificable. La recopilación de informes de fallos puede desactivarse en Ajustes de la app.</p>
 
 <h3>2.7 Estadísticas de uso anónimas</h3>
-<p>La app envía eventos de uso anónimos (por ejemplo, "el usuario abrió la pantalla Estadísticas", "el usuario tocó una función PRO bloqueada") para que podamos entender qué partes de Formora se usan y dónde se atascan los usuarios. Cada evento incluye versión de la app, versión del SO y un identificador aleatorio por instalación; <strong>nunca se envían valores de medidas, fotos, nombres ni ningún identificador vinculado a tu Apple ID, correo electrónico o número de serie del dispositivo</strong>. El identificador por instalación se genera localmente en el primer arranque y no está vinculado a ningún otro servicio. Puedes desactivar el envío en cualquier momento desde <em>Ajustes → Privacidad → Enviar uso anónimo</em>; al desactivarlo los nuevos eventos dejan de enviarse de inmediato.</p>
+<p>La app envía eventos de uso anónimos (por ejemplo, "el usuario abrió la pantalla Estadísticas", "el usuario tocó una función PRO bloqueada") a <strong>PostHog Cloud (región UE, servidores en Fráncfort)</strong> para que podamos entender qué partes de Formora se usan y dónde se atascan los usuarios. Cada evento incluye:</p>
+<ul>
+  <li>Versión de la app, versión del SO, modelo del dispositivo y tamaño de pantalla, zona horaria e idioma.</li>
+  <li>Un identificador aleatorio por instalación generado localmente al primer arranque — <strong>no vinculado a tu Apple ID, correo electrónico, número de serie del dispositivo ni a ningún servicio de terceros</strong>.</li>
+  <li>Tu dirección IP, que PostHog convierte en país/ciudad antes de descartar la IP cruda. (Planeamos desactivar la recopilación de IP a nivel de proyecto.)</li>
+</ul>
+<p><strong>Nunca se envían valores de medidas, fotos, nombres, fechas de nacimiento ni pesos.</strong> La base legal de este tratamiento bajo el RGPD es nuestro interés legítimo en entender el uso del producto; puedes optar por no participar en cualquier momento desde <em>Ajustes → Privacidad → Enviar uso anónimo</em>, lo que detiene inmediatamente los nuevos eventos y borra el identificador de instalación del backend analítico.</p>
 
 <h2>3. Qué NO recopilamos</h2>
 <ul>
