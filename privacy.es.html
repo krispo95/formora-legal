@@ -10,12 +10,12 @@
 
 <h1>Política de privacidad</h1>
 <p class="meta">
-  Última actualización: 15 de julio de 2026 ·
+  Última actualización: 27 de julio de 2026 ·
   <a href="privacy.html">English</a> ·
   <a href="privacy.ru.html">Русский</a>
 </p>
 
-<p>Esta Política explica cómo <strong>Formora</strong> ("nosotros", "la app") trata tus datos cuando usas la aplicación para iOS. Diseñamos Formora para mantener tu información de salud en tu dispositivo siempre que sea posible; este documento detalla qué recopilamos, dónde se guarda y qué puedes hacer al respecto.</p>
+<p>Esta Política explica cómo <strong>Formora</strong> ("nosotros", "la app") trata tus datos cuando usas la aplicación para iOS. Formora mantiene tu información de salud en tu dispositivo y, cuando usas la copia de seguridad, en <em>tu propio</em> iCloud: no tenemos servidores que guarden tus medidas, tus fotos ni tus datos de ciclo. Este documento detalla qué se guarda, dónde y qué puedes hacer al respecto.</p>
 
 <h2>1. Quién desarrolla la app</h2>
 <p>Formora es una aplicación iOS desarrollada de forma independiente. Para cualquier consulta escríbenos a <a href="mailto:krispo.dev@gmail.com">krispo.dev@gmail.com</a>.</p>
@@ -23,60 +23,89 @@
 <h2>2. Qué datos maneja la app</h2>
 
 <h3>2.1 Medidas que registras</h3>
-<p>Las medidas corporales que tú mismo registras — peso, porcentaje de grasa, masa magra, perímetros (pecho, cintura, cadera, muslo, etc.), altura y cualquier medida personalizada que añadas — se guardan en la base de datos local de la app en tu iPhone. No las subimos a ningún servidor.</p>
+<p>Las medidas corporales que tú mismo registras — peso, porcentaje de grasa, masa magra, perímetros (pecho, cintura, cadera, muslo, etc.), altura y cualquier medida personalizada que añadas — se guardan en la base de datos local de la app en tu iPhone. Nunca se envían a nosotros ni a terceros. Si la copia de seguridad está activada, una copia se guarda en tu propio iCloud; ver §2.9.</p>
 
 <h3>2.2 Fotos de progreso</h3>
-<p>Las fotos que tomas o importas como fotos de progreso se almacenan en el contenedor privado de la app en tu dispositivo. No se suben a ningún sitio, no se comparten con nosotros y se eliminan cuando borras la foto desde la app o desinstalas la aplicación.</p>
+<p>Las fotos que tomas o importas como fotos de progreso se almacenan en el contenedor privado de la app en tu dispositivo. Nunca se comparten con nosotros y se eliminan cuando borras la foto desde la app o desinstalas la aplicación. Si la copia de seguridad está activada, cada foto se cifra además y se copia a tu propio iCloud; ver §2.9.</p>
 
 <h3>2.3 Apple Health (HealthKit)</h3>
-<p>Si activas la sincronización con Apple Health en Ajustes, Formora lee de Health las muestras de peso, porcentaje de grasa, masa magra, altura y perímetro de cintura, y escribe en Health las medidas equivalentes que guardas en Formora. Los datos de HealthKit se intercambian directamente entre la app y la base de datos del sistema Health — no salen de tu dispositivo a través de Formora. Puedes revocar el acceso de lectura o escritura en cualquier momento desde <em>Ajustes de iOS → Salud → Acceso a datos y dispositivos → Formora</em>.</p>
+<p>Si activas la sincronización con Apple Health en Ajustes, Formora lee de Health las muestras de peso, porcentaje de grasa, masa magra, altura y perímetro de cintura, y escribe en Health las medidas equivalentes que guardas en Formora.</p>
+<p>Si además activas la sincronización del ciclo, Formora <strong>lee tus registros de flujo menstrual</strong> de Apple Health para dibujar los días de regla y las fases del ciclo en tus gráficos. Este acceso es <strong>solo de lectura: Formora nunca escribe datos de regla o de ciclo de vuelta en Apple Health.</strong></p>
+<p>Los datos de HealthKit se intercambian directamente entre la app y la base de datos del sistema Health: nunca llegan a nosotros. Puedes revocar el acceso de lectura o escritura en cualquier momento desde <em>Ajustes de iOS → Salud → Acceso a datos y dispositivos → Formora</em>.</p>
 
-<h3>2.4 Datos de perfil</h3>
-<p>Opcionalmente puedes introducir nombre, sexo, fecha de nacimiento y altura para que la app calcule IMC, porcentaje de grasa y masa magra. Estos valores se guardan localmente y nunca se transmiten.</p>
+<h3>2.4 Datos del ciclo</h3>
+<p>Si usas las funciones de ciclo, la app deduce las fechas de inicio de tus reglas y las fases del ciclo, y las muestra sobre tus gráficos de medidas. Esa información procede de uno de dos sitios: los registros de flujo menstrual que lee de Apple Health (§2.3), o el día del ciclo que anotas tú misma junto a una medida.</p>
+<p>El día del ciclo que introduces se guarda como parte de ese registro de medida, así que se conserva y se respalda en las mismas condiciones que cualquier otra medida (§2.1, §2.9). Las fases del ciclo más allá de un inicio de regla registrado son estimaciones que la app calcula en tu dispositivo; no son predicciones médicas.</p>
+<p>Los datos menstruales se tratan como información de salud sensible. Nunca se nos envían, nunca se incluyen en la analítica ni en los informes de fallos, y no se comparten con terceros.</p>
 
-<h3>2.5 Suscripciones (PRO)</h3>
+<h3>2.5 Datos de perfil</h3>
+<p>Opcionalmente puedes introducir nombre, sexo, fecha de nacimiento y altura para que la app calcule IMC, porcentaje de grasa y masa magra. Estos valores se guardan localmente, nunca se nos transmiten y se incluyen en tu propia copia de seguridad en iCloud si está activada (§2.9).</p>
+
+<h3>2.6 Suscripciones (PRO)</h3>
 <p>Si compras una suscripción PRO, el pago se procesa a través del <strong>App Store de Apple</strong> usando el Apple ID asociado a tu dispositivo. Para validar la compra y comprobar el estado de la suscripción usamos <strong>RevenueCat</strong> (un servicio de terceros operado por RevenueCat Inc.) — recibe un identificador anónimo del dispositivo y el recibo de transacción de Apple, nada más. Ningún dato personal, medida o foto se envía a RevenueCat. Consulta la <a href="https://www.revenuecat.com/privacy/">política de privacidad de RevenueCat</a>.</p>
 
-<h3>2.6 Datos de diagnóstico</h3>
-<p>Si la app sufre un fallo, puede generarse un informe anonimizado (detalles técnicos como el archivo y línea donde ocurrió, versión de iOS, modelo del dispositivo) para ayudarnos a corregirlo. Estos informes no contienen medidas, fotos ni información personal identificable. Los informes de fallos solo se envían si activaste los diagnósticos anónimos (el mismo consentimiento del §2.7, desactivado por defecto) y pueden desactivarse en cualquier momento en Ajustes de la app.</p>
+<h3>2.7 Datos de diagnóstico</h3>
+<p>Si la app falla, puede recogerse un informe de error anonimizado (detalles técnicos como el archivo y la línea donde ocurrió el fallo, la versión de iOS y el modelo del dispositivo) para ayudarnos a corregirlo. Estos informes no contienen medidas, fotos, datos de ciclo ni información que te identifique. Los informes solo se envían si has activado el diagnóstico anónimo (el mismo consentimiento que en §2.8, desactivado por defecto) y puedes desactivarlos en cualquier momento en los Ajustes de la app.</p>
 
-<h3>2.7 Estadísticas de uso anónimas</h3>
-<p>La app envía eventos de uso anónimos (por ejemplo, "el usuario abrió la pantalla Estadísticas", "el usuario tocó una función PRO bloqueada") a <strong>PostHog Cloud (región UE, servidores en Fráncfort)</strong> para que podamos entender qué partes de Formora se usan y dónde se atascan los usuarios. Cada evento incluye:</p>
+<h3>2.8 Estadísticas de uso anónimas</h3>
+<p>La app envía eventos de uso anónimos (por ejemplo, "se abrió la pantalla Estadísticas", "se pulsó una función PRO bloqueada") a <strong>PostHog Cloud (región UE, alojado en Fráncfort)</strong> para que podamos entender qué partes de Formora se usan y dónde se atasca la gente. Cada evento incluye:</p>
 <ul>
-  <li>Versión de la app, versión del SO, modelo del dispositivo y tamaño de pantalla, zona horaria e idioma.</li>
-  <li>Un identificador aleatorio por instalación generado localmente al primer arranque — <strong>no vinculado a tu Apple ID, correo electrónico, número de serie del dispositivo ni a ningún servicio de terceros</strong>.</li>
-  <li>Tu dirección IP, que PostHog convierte en país/ciudad antes de descartar la IP cruda. (Planeamos desactivar la recopilación de IP a nivel de proyecto.)</li>
+  <li>Versión de la app, versión del sistema, modelo de dispositivo y tamaño de pantalla, zona horaria e idioma.</li>
+  <li>Un identificador aleatorio por instalación generado localmente en el primer arranque — <strong>no vinculado a tu Apple ID, correo, número de serie del dispositivo ni a ningún servicio de terceros</strong>.</li>
+  <li>Tu dirección IP, que PostHog convierte en un país/ciudad aproximados antes de descartar la IP original. (Estamos trabajando para desactivar por completo la recogida de IP a nivel de proyecto.)</li>
 </ul>
-<p><strong>Nunca se envían valores de medidas, fotos, nombres, fechas de nacimiento ni pesos.</strong> La base legal de este tratamiento bajo el RGPD es tu consentimiento: la analítica está <strong>desactivada por defecto</strong> y solo se inicia después de pulsar «Permitir» en la pantalla de consentimiento durante la configuración inicial. Puedes retirar tu consentimiento en cualquier momento desde <em>Ajustes → Privacidad → Enviar uso anónimo</em>, lo que detiene inmediatamente los nuevos eventos y borra el identificador de instalación del backend analítico.</p>
+<p><strong>Nunca se envían valores de medidas, fotos, datos de ciclo, nombres, fechas de nacimiento ni pesos.</strong> La base legal de este tratamiento según el RGPD es tu consentimiento: la analítica está <strong>desactivada por defecto</strong> y solo se inicia después de que pulses "Permitir" en la pantalla de consentimiento durante la configuración inicial. Puedes retirar el consentimiento cuando quieras en <em>Ajustes → Privacidad → Enviar estadísticas de uso anónimas</em>, lo que detiene de inmediato los nuevos eventos y borra el identificador de instalación de nuestro backend de analítica.</p>
+
+<h3>2.9 Copia de seguridad en iCloud y sincronización entre tus dispositivos</h3>
+<p>Formora mantiene una copia de seguridad cifrada en <strong>tu propio almacenamiento de iCloud Drive</strong>, para que puedas restaurarlo todo en un iPhone nuevo y para que tus dispositivos se mantengan al día entre sí. <strong>Está activada por defecto</strong> y puedes desactivarla en cualquier momento en <em>Ajustes → Copia en iCloud</em>.</p>
+<p>Lo que conviene saber:</p>
+<ul>
+  <li><strong>Va a tu cuenta de iCloud, no a nosotros.</strong> No operamos servidores para tus datos ni tenemos acceso a tu iCloud. Es una copia basada en archivos dentro del contenedor de iCloud propio de la app, no una base de datos compartida.</li>
+  <li><strong>Qué contiene:</strong> tus medidas (incluido el día del ciclo anotado con ellas), tus fotos de progreso, metas, medidas personalizadas, ángulos de foto personalizados, plantillas, datos de perfil y ajustes de la app.</li>
+  <li><strong>Se cifra antes de salir de tu dispositivo</strong> con AES-GCM: la base de datos como un único bloque y cada foto como un archivo cifrado aparte.</li>
+  <li><strong>La clave nunca llega a nosotros.</strong> Se genera en tu dispositivo y se guarda en tu Llavero de iCloud, que es lo que permite que tu otro iPhone abra la misma copia sin escribir ninguna contraseña. Si el Llavero de iCloud está desactivado, la copia no podrá restaurarse en otro dispositivo.</li>
+  <li><strong>Se conservan versiones anteriores durante un tiempo.</strong> Junto a la copia actual la app guarda hasta 7 instantáneas diarias y 4 semanales, para que un error — un borrado equivocado, una importación fallida — no se convierta de inmediato en la única copia que tienes. Las instantáneas antiguas se eliminan solas. Lo que esto implica al borrar datos está en §4 y §5.</li>
+  <li>Junto a ella se guarda un pequeño archivo de índice sin cifrar (fecha de la copia y número de registros, usado para mostrarte cuándo se hizo la última), en ese mismo contenedor privado de iCloud.</li>
+</ul>
 
 <h2>3. Qué NO recopilamos</h2>
 <ul>
   <li>No recopilamos tu nombre, correo electrónico, teléfono ni datos de contacto por defecto.</li>
   <li>No rastreamos tu ubicación.</li>
   <li>No vendemos ni compartimos tus datos con anunciantes.</li>
-  <li>No usamos cross-app tracking — por eso no se invoca App Tracking Transparency.</li>
+  <li>No usamos seguimiento entre apps — por eso no se invoca App Tracking Transparency.</li>
+  <li>No operamos ningún servidor que almacene tus medidas, fotos o datos de ciclo, y no podemos leer tu copia de seguridad en iCloud.</li>
 </ul>
 
 <h2>4. Cuánto tiempo se conservan los datos</h2>
-<p>Tus medidas, fotos y datos de perfil permanecen en tu dispositivo hasta que las elimines o desinstales la app. Los recibos de suscripción los conservan Apple y RevenueCat durante la vigencia de la suscripción, conforme a los requisitos de facturación y cumplimiento.</p>
+<p>Tus medidas, fotos, perfil y datos de ciclo permanecen en tu dispositivo hasta que los borras o desinstalas la app.</p>
+<p>Si la copia en iCloud está activada, una copia permanece también en tu propio almacenamiento de iCloud hasta que la borras (§5). Como la app conserva hasta 7 instantáneas diarias y 4 semanales, un registro que borres en tu dispositivo puede seguir dentro de una instantánea conservada durante aproximadamente un mes, hasta que esa instantánea se elimine.</p>
+<p>Los recibos de suscripción los conservan Apple y RevenueCat mientras dure la suscripción, según exigen la facturación y la normativa.</p>
 
 <h2>5. Borrar tus datos</h2>
-<p>Puedes eliminar todos los datos que Formora ha guardado desde <em>Ajustes → Gestión de datos → Restablecer todos los datos</em>. Esto borra cada medida, foto y preferencia de tu dispositivo. Desinstalar la app también elimina su contenedor, incluida la base SwiftData y las fotos almacenadas.</p>
+<p><strong>En tu dispositivo.</strong> <em>Ajustes → Gestión de datos → Restablecer todos los datos</em> elimina cada medida, foto y ajuste del iPhone que estés usando. Desinstalar la app también elimina su contenedor local, incluida la base de datos y las fotos guardadas.</p>
+<p><strong>En iCloud.</strong> Ninguna de las dos cosas borra la copia de seguridad, ni retira la clave de cifrado de tu Llavero de iCloud. Si quieres eliminar también la copia en iCloud:</p>
+<ul>
+  <li>Desactiva primero la copia en <em>Ajustes → Copia en iCloud</em>, para que la app no vuelva a subirla.</li>
+  <li>Borra los datos guardados en <em>Ajustes de iOS → [tu nombre] → iCloud → Gestionar almacenamiento de la cuenta → Formora</em>. Esto elimina la copia actual y todas las instantáneas conservadas de una vez.</li>
+</ul>
+<p>Si prefieres no hacerlo tú, escríbenos y te guiamos paso a paso — pero ten en cuenta que no podemos borrarlo por ti: los datos están en tu cuenta de iCloud, a la que no tenemos acceso.</p>
 
 <h2>6. Seguridad</h2>
-<p>Los datos se almacenan en el contenedor privado de la app, protegidos por el cifrado del sistema de archivos de iOS cuando tu dispositivo está bloqueado. Como los datos permanecen en el dispositivo, su seguridad depende de la seguridad del propio dispositivo — recomendamos usar un código de acceso fuerte y Face ID / Touch ID.</p>
+<p>En el dispositivo, los datos se guardan en el contenedor privado de la app, protegidos por el cifrado del sistema de archivos de iOS cuando el dispositivo está bloqueado. En iCloud, la copia se cifra con AES-GCM antes de subirse, y la clave la guarda tu Llavero de iCloud, no nosotros (§2.9).</p>
+<p>Como tus datos viven en tu propio dispositivo y en tu propia cuenta de Apple, su seguridad depende de la de ambos: recomendamos un código robusto, Face ID / Touch ID y la autenticación de doble factor en tu Apple ID.</p>
 
 <h2>7. Menores</h2>
-<p>Formora está pensado para usuarios a partir de los 13 años. No recopilamos conscientemente datos de menores de 13. Si crees que un menor ha usado la app e introducido datos, contáctanos para que te orientemos.</p>
+<p>Formora está pensada para personas de 13 años en adelante. No recopilamos conscientemente datos de menores de 13. Si crees que un menor ha usado la app e introducido datos, escríbenos para que podamos orientarte.</p>
 
 <h2>8. Tus derechos</h2>
-<p>Como tus datos viven en tu dispositivo, los controlas directamente: los ves en la app, editas cualquier registro, exportas todo a CSV/PDF (PRO) o los borras cuando quieras. Si resides en la UE/EEE, Reino Unido o California, también puedes escribirnos para saber qué datos de diagnóstico vinculados a tu dispositivo (si los hay) tenemos; responderemos en un plazo de 30 días.</p>
+<p>Como tus datos viven en tu dispositivo y en tu propio iCloud, los controlas directamente: consúltalos en la app, edita cualquier registro, expórtalo todo a CSV/PDF (PRO) o bórralo cuando quieras (§5). Si resides en la UE/EEE, el Reino Unido o California, también puedes escribirnos para preguntar qué datos de diagnóstico vinculados a tu dispositivo (si los hay) conservamos; responderemos en un plazo de 30 días.</p>
 
 <h2>9. Cambios en esta política</h2>
-<p>Podemos actualizar esta Política de vez en cuando. La fecha de "Última actualización" en la parte superior refleja el cambio más reciente. Los cambios materiales se destacarán en las notas de la versión de la app.</p>
+<p>Podemos actualizar esta Política de privacidad de vez en cuando. La fecha de "Última actualización" en la parte superior refleja el cambio más reciente. Los cambios materiales se destacarán en las notas de la versión de la app.</p>
 
 <h2>10. Contacto</h2>
-<p>Para consultas sobre privacidad: <a href="mailto:krispo.dev@gmail.com">krispo.dev@gmail.com</a>.</p>
+<p>Para consultas de privacidad: <a href="mailto:krispo.dev@gmail.com">krispo.dev@gmail.com</a>.</p>
 
 <footer>© 2026 Formora. Todos los derechos reservados.</footer>
 

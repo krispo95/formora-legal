@@ -10,12 +10,12 @@
 
 <h1>Privacy Policy</h1>
 <p class="meta">
-  Last updated: 15 July 2026 ·
+  Last updated: 27 July 2026 ·
   <a href="privacy.ru.html">Русский</a> ·
   <a href="privacy.es.html">Español</a>
 </p>
 
-<p>This Privacy Policy explains how <strong>Formora</strong> ("we", "the app") handles your data when you use the iOS application. We designed Formora to keep your health information on your device whenever possible; this document tells you exactly what we collect, where it is stored, and what you can do about it.</p>
+<p>This Privacy Policy explains how <strong>Formora</strong> ("we", "the app") handles your data when you use the iOS application. Formora keeps your health information on your device and, when you use the backup, in <em>your own</em> iCloud — we run no servers that hold your measurements, photos or cycle data. This document tells you exactly what is stored, where, and what you can do about it.</p>
 
 <h2>1. Who runs the app</h2>
 <p>Formora is an independently developed iOS application. If you need to reach us, write to <a href="mailto:krispo.dev@gmail.com">krispo.dev@gmail.com</a>.</p>
@@ -23,31 +23,50 @@
 <h2>2. What data the app handles</h2>
 
 <h3>2.1 Measurements you enter</h3>
-<p>The body measurements you record yourself — weight, body fat, lean mass, circumferences (chest, waist, hips, thigh, etc.), height, and any custom measurements you add — are saved in the app's local database on your iPhone. We do not upload them to any server.</p>
+<p>The body measurements you record yourself — weight, body fat, lean mass, circumferences (chest, waist, hips, thigh, etc.), height, and any custom measurements you add — are saved in the app's local database on your iPhone. They are never sent to us or to any third party. A copy is placed in your own iCloud if the backup is on; see §2.9.</p>
 
 <h3>2.2 Progress photos</h3>
-<p>Photos you take or import as progress photos are stored in the app's private container on your device. They are not uploaded anywhere, are not shared with us, and are deleted when you delete the photo from the app or uninstall it.</p>
+<p>Photos you take or import as progress photos are stored in the app's private container on your device. They are never shared with us, and are deleted when you delete the photo from the app or uninstall it. If the backup is on, each photo is also encrypted and copied to your own iCloud; see §2.9.</p>
 
 <h3>2.3 Apple Health (HealthKit)</h3>
-<p>If you turn on Apple Health sync in Settings, Formora reads weight, body fat percentage, lean body mass, height, and waist circumference samples from Apple Health, and writes the matching measurements you save in Formora back to Apple Health. HealthKit data is exchanged directly between the app and the iOS Health database — it never leaves your device through Formora. You can revoke read or write access at any time in <em>iOS Settings → Health → Data Access &amp; Devices → Formora</em>.</p>
+<p>If you turn on Apple Health sync in Settings, Formora reads weight, body fat percentage, lean body mass, height, and waist circumference samples from Apple Health, and writes the matching measurements you save in Formora back to Apple Health.</p>
+<p>If you also turn on cycle sync, Formora <strong>reads your menstrual flow records</strong> from Apple Health in order to draw period days and cycle phases on your charts. This access is <strong>read-only: Formora never writes period or cycle data back to Apple Health.</strong></p>
+<p>HealthKit data is exchanged directly between the app and the iOS Health database — it never reaches us. You can revoke read or write access at any time in <em>iOS Settings → Health → Data Access &amp; Devices → Formora</em>.</p>
 
-<h3>2.4 Profile data</h3>
-<p>You may optionally enter a name, gender, date of birth, and height so the app can compute BMI, body fat, and lean mass. These values are stored locally and never transmitted.</p>
+<h3>2.4 Cycle data</h3>
+<p>If you use the cycle features, the app works out your period start dates and cycle phases and shows them on your measurement charts. This information comes from one of two places: the menstrual flow records it reads from Apple Health (§2.3), or the cycle day you record yourself alongside a measurement.</p>
+<p>The cycle day you enter is stored as part of that measurement record, which means it is kept and backed up on the same terms as every other measurement (§2.1, §2.9). Cycle phases beyond a recorded period start are estimates the app calculates on your device; they are not medical predictions.</p>
+<p>Menstrual data is treated as sensitive health information. It is never sent to us, never included in analytics or crash reports, and never shared with any third party.</p>
 
-<h3>2.5 Subscriptions (PRO)</h3>
+<h3>2.5 Profile data</h3>
+<p>You may optionally enter a name, gender, date of birth, and height so the app can compute BMI, body fat, and lean mass. These values are stored locally, are never transmitted to us, and are included in your own iCloud backup if it is on (§2.9).</p>
+
+<h3>2.6 Subscriptions (PRO)</h3>
 <p>If you purchase a PRO subscription, the purchase is processed by <strong>Apple's App Store</strong> using the Apple ID associated with your device. We rely on <strong>RevenueCat</strong> (a third-party service operated by RevenueCat Inc.) to validate purchases and check subscription status. RevenueCat receives an anonymous device identifier and the Apple transaction receipt for that purpose — no personal information, no measurements, and no photos. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's privacy policy</a>.</p>
 
-<h3>2.6 Diagnostic data</h3>
-<p>If a crash occurs, an anonymised crash report (technical details such as the file name and line where the crash happened, iOS version, and device model) may be collected to help us fix the issue. These reports contain no measurements, photos, or personally identifiable information. Crash reports are only sent if you enabled anonymous diagnostics (the same consent as §2.7 — off by default) and can be disabled at any time in the app's Settings.</p>
+<h3>2.7 Diagnostic data</h3>
+<p>If a crash occurs, an anonymised crash report (technical details such as the file name and line where the crash happened, iOS version, and device model) may be collected to help us fix the issue. These reports contain no measurements, photos, cycle data, or personally identifiable information. Crash reports are only sent if you enabled anonymous diagnostics (the same consent as §2.8 — off by default) and can be disabled at any time in the app's Settings.</p>
 
-<h3>2.7 Anonymous usage analytics</h3>
+<h3>2.8 Anonymous usage analytics</h3>
 <p>The app sends anonymous usage events (e.g. "user opened the Statistics screen", "user tapped a locked PRO feature") to <strong>PostHog Cloud (EU region, hosted in Frankfurt)</strong> so we can understand which parts of Formora are used and where people get stuck. Each event carries:</p>
 <ul>
   <li>App version, OS version, device model and screen size, timezone and locale.</li>
   <li>A random per-install identifier generated locally on first launch — <strong>not linked to your Apple ID, email, device serial number, or any third-party service</strong>.</li>
   <li>Your IP address, which PostHog converts to a coarse country/city before discarding the raw IP. (We are working on disabling IP collection entirely at the project level.)</li>
 </ul>
-<p><strong>No measurement values, photos, names, dates of birth, or weights are ever sent.</strong> The legal basis for this processing under GDPR is your consent: analytics is <strong>off by default</strong> and only starts after you tap “Allow” on the consent screen shown during onboarding. You can withdraw consent at any time in <em>Settings → Privacy → Send anonymous usage data</em>, which immediately stops new events and clears the per-install identifier from our analytics backend.</p>
+<p><strong>No measurement values, photos, cycle data, names, dates of birth, or weights are ever sent.</strong> The legal basis for this processing under GDPR is your consent: analytics is <strong>off by default</strong> and only starts after you tap “Allow” on the consent screen shown during onboarding. You can withdraw consent at any time in <em>Settings → Privacy → Send anonymous usage data</em>, which immediately stops new events and clears the per-install identifier from our analytics backend.</p>
+
+<h3>2.9 iCloud backup and sync between your devices</h3>
+<p>Formora keeps an encrypted backup in <strong>your own iCloud Drive storage</strong>, so you can restore everything on a new iPhone and so your devices stay in step with each other. <strong>This is on by default</strong> and can be turned off at any time in <em>Settings → iCloud Backup</em>.</p>
+<p>What is worth knowing about it:</p>
+<ul>
+  <li><strong>It goes to your iCloud account, not to us.</strong> We operate no servers for your data and have no access to your iCloud. This is a file-based backup in the app's own iCloud container — not a shared database.</li>
+  <li><strong>What it contains:</strong> your measurements (including any cycle day recorded with them), your progress photos, goals, custom measurements, custom photo angles, templates, profile data and app preferences.</li>
+  <li><strong>It is encrypted before it leaves your device</strong> with AES-GCM: the database as one blob, and every photo as a separate encrypted file.</li>
+  <li><strong>The key never reaches us.</strong> It is generated on your device and kept in your iCloud Keychain, which is how your other iPhone can open the same backup without you typing a password. If iCloud Keychain is off, the backup cannot be restored on a different device.</li>
+  <li><strong>Earlier versions are kept for a while.</strong> Alongside the current backup the app retains up to 7 daily and 4 weekly snapshots, so a mistake — a wrong deletion, a bad import — does not immediately become the only copy you have. Older snapshots are dropped automatically. See §4 and §5 for what this means for deletion.</li>
+  <li>A small index file (backup date and record counts, used to show you when the last backup ran) is stored unencrypted alongside it, in the same private iCloud container.</li>
+</ul>
 
 <h2>3. What we do NOT collect</h2>
 <ul>
@@ -55,22 +74,32 @@
   <li>We do not track your location.</li>
   <li>We do not sell or share your data with advertisers.</li>
   <li>We do not use cross-app tracking — App Tracking Transparency is therefore not invoked.</li>
+  <li>We do not operate any server that stores your measurements, photos or cycle data, and we cannot read your iCloud backup.</li>
 </ul>
 
 <h2>4. How long data is kept</h2>
-<p>Your measurements, photos, and profile data stay on your device until you delete them or uninstall the app. Subscription receipts are kept by Apple and RevenueCat for the lifetime of the subscription as required for billing and compliance.</p>
+<p>Your measurements, photos, profile and cycle data stay on your device until you delete them or uninstall the app.</p>
+<p>If the iCloud backup is on, a copy also stays in your own iCloud storage until you delete it (§5). Because the app retains up to 7 daily and 4 weekly snapshots, a record you delete on your device can remain inside a retained snapshot for up to roughly a month before that snapshot is dropped.</p>
+<p>Subscription receipts are kept by Apple and RevenueCat for the lifetime of the subscription as required for billing and compliance.</p>
 
 <h2>5. Deleting your data</h2>
-<p>You can delete all data Formora has saved from <em>Settings → Data Management → Reset all data</em>. This removes every measurement, photo, and preference from your device. Uninstalling the app also removes its data container, including the SwiftData database and stored photos.</p>
+<p><strong>On your device.</strong> <em>Settings → Data Management → Reset all data</em> removes every measurement, photo and preference from the iPhone you are using. Uninstalling the app also removes its local data container, including the database and stored photos.</p>
+<p><strong>In iCloud.</strong> Neither of those deletes the backup, and neither removes the encryption key from your iCloud Keychain. If you want the iCloud copy gone as well:</p>
+<ul>
+  <li>Turn the backup off first, in <em>Settings → iCloud Backup</em>, so the app does not upload again.</li>
+  <li>Delete the stored data in <em>iOS Settings → [your name] → iCloud → Manage Account Storage → Formora</em>. This removes the current backup and every retained snapshot together.</li>
+</ul>
+<p>If you would rather not do this yourself, write to us and we will walk you through it — but note that we cannot delete it for you: the data is in your iCloud account, which we have no access to.</p>
 
 <h2>6. Data security</h2>
-<p>Data is stored in the app's private container, protected by iOS file-system encryption when your device is locked. Because data stays on-device, the security of your information depends on the security of your device — we recommend using a strong passcode and Face ID / Touch ID.</p>
+<p>On the device, data is stored in the app's private container, protected by iOS file-system encryption when your device is locked. In iCloud, the backup is encrypted with AES-GCM before upload, and the key is held in your iCloud Keychain rather than by us (§2.9).</p>
+<p>Because your data lives in your own device and your own Apple account, its security depends on the security of those — we recommend a strong passcode, Face ID / Touch ID, and two-factor authentication on your Apple ID.</p>
 
 <h2>7. Children</h2>
 <p>Formora is intended for users aged 13 and over. We do not knowingly collect data from anyone under 13. If you believe a child has used the app and entered data, please contact us so we can advise.</p>
 
 <h2>8. Your rights</h2>
-<p>Because your data lives on your device, you control it directly: view it in the app, edit any record, export everything to CSV/PDF (PRO), or delete it at any time. If you live in the EU/EEA, the UK, or California, you may also email us to ask what diagnostic data tied to your device (if any) we hold; we will reply within 30 days.</p>
+<p>Because your data lives on your device and in your own iCloud, you control it directly: view it in the app, edit any record, export everything to CSV/PDF (PRO), or delete it at any time (§5). If you live in the EU/EEA, the UK, or California, you may also email us to ask what diagnostic data tied to your device (if any) we hold; we will reply within 30 days.</p>
 
 <h2>9. Changes to this policy</h2>
 <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the most recent change. Material changes will be highlighted in the app's release notes.</p>
