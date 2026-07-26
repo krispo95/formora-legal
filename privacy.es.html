@@ -52,7 +52,7 @@
 <ul>
   <li>Versión de la app, versión del sistema, modelo de dispositivo y tamaño de pantalla, zona horaria e idioma.</li>
   <li>Un identificador aleatorio por instalación generado localmente en el primer arranque — <strong>no vinculado a tu Apple ID, correo, número de serie del dispositivo ni a ningún servicio de terceros</strong>.</li>
-  <li>Tu dirección IP, que PostHog convierte en un país/ciudad aproximados antes de descartar la IP original. (Estamos trabajando para desactivar por completo la recogida de IP a nivel de proyecto.)</li>
+  <li>Tu dirección IP, que PostHog convierte en un país y una ciudad aproximados y después descarta. Conservamos esa ubicación aproximada porque muestra en qué países se usa Formora, y eso es lo que decide a qué idiomas traducimos después. Nunca se vincula con tus medidas, fotos ni datos de ciclo, que no salen de tu dispositivo.</li>
 </ul>
 <p><strong>Nunca se envían valores de medidas, fotos, datos de ciclo, nombres, fechas de nacimiento ni pesos.</strong> La base legal de este tratamiento según el RGPD es tu consentimiento: la analítica está <strong>desactivada por defecto</strong> y solo se inicia después de que pulses "Permitir" en la pantalla de consentimiento durante la configuración inicial. Puedes retirar el consentimiento cuando quieras en <em>Ajustes → Privacidad → Enviar estadísticas de uso anónimas</em>, lo que detiene de inmediato los nuevos eventos y borra el identificador de instalación de nuestro backend de analítica.</p>
 

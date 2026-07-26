@@ -52,7 +52,7 @@
 <ul>
   <li>App version, OS version, device model and screen size, timezone and locale.</li>
   <li>A random per-install identifier generated locally on first launch — <strong>not linked to your Apple ID, email, device serial number, or any third-party service</strong>.</li>
-  <li>Your IP address, which PostHog converts to a coarse country/city before discarding the raw IP. (We are working on disabling IP collection entirely at the project level.)</li>
+  <li>Your IP address, which PostHog converts into an approximate country and city and then discards. We keep that coarse location because it shows which countries Formora is used in, and that is what decides which languages we translate next. It is never linked to your measurements, photos or cycle data — none of which leave your device.</li>
 </ul>
 <p><strong>No measurement values, photos, cycle data, names, dates of birth, or weights are ever sent.</strong> The legal basis for this processing under GDPR is your consent: analytics is <strong>off by default</strong> and only starts after you tap “Allow” on the consent screen shown during onboarding. You can withdraw consent at any time in <em>Settings → Privacy → Send anonymous usage data</em>, which immediately stops new events and clears the per-install identifier from our analytics backend.</p>
 
