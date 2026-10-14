@@ -18,11 +18,11 @@
           "bullets": [
             { "icon": "chart.xyaxis.line", "text": "Дозы идут полоской под графиком веса: изменение линии оказывается рядом с тем, что вы приняли." },
             { "icon": "calendar.badge.clock", "text": "Formora считает, когда следующая доза, и может напомнить за день." },
-            { "icon": "arrow.up.right", "text": "Подъём дозы 0,25 → 0,5 → 1 мг отмечается на графике, так что видно, на какой ступени вес пошёл." },
-            { "icon": "calendar.badge.plus", "text": "Курс, начатый до приложения, добавляется целиком — по датам и изменениям дозы, а не по одному уколу." }
+            { "icon": "calendar.badge.plus", "text": "Курс, начатый до приложения, добавляется целиком — по датам и изменениям дозы." },
+            { "icon": "gearshape", "text": "Как включить: «Препарат» → выбрать препарат и как часто вы его делаете. Дальше доза отмечается в одно касание с главного экрана." }
           ],
           "footnote": "Formora — трекер, а не медицинский прибор. Решения о дозе и схеме остаются за вами и вашим врачом.",
-          "primary": { "label": "Посмотреть статистику", "action": "open:statistics" },
+          "primary": { "label": "Открыть настройки препарата", "action": "open:settings/medication" },
           "secondary": "Не сейчас"
         },
         "en": {
@@ -31,11 +31,11 @@
           "bullets": [
             { "icon": "chart.xyaxis.line", "text": "Doses run along the bottom of the weight chart, so a change in the line sits next to what you took." },
             { "icon": "calendar.badge.clock", "text": "Formora works out when the next dose is due and can remind you a day ahead." },
-            { "icon": "arrow.up.right", "text": "A step up from 0.25 to 0.5 to 1 mg is marked, so you can see which rung the weight moved on." },
-            { "icon": "calendar.badge.plus", "text": "A course you started before the app goes in at once — from its dates and dose changes, not one injection at a time." }
+            { "icon": "calendar.badge.plus", "text": "A course you started before the app goes in at once — from its dates and dose changes." },
+            { "icon": "gearshape", "text": "How to switch it on: Medication → pick the drug and how often you take it. After that a dose is one tap from the home screen." }
           ],
           "footnote": "Formora is a tracker, not a medical device. Dose and schedule decisions belong to you and your doctor.",
-          "primary": { "label": "Open Statistics", "action": "open:statistics" },
+          "primary": { "label": "Open medication settings", "action": "open:settings/medication" },
           "secondary": "Not now"
         },
         "es": {
@@ -44,10 +44,11 @@
           "bullets": [
             { "icon": "chart.xyaxis.line", "text": "Las dosis van en una franja bajo la gráfica de peso, junto al cambio que les corresponde." },
             { "icon": "calendar.badge.clock", "text": "Formora calcula cuándo toca la siguiente dosis y puede avisarte un día antes." },
-            { "icon": "calendar.badge.plus", "text": "Un tratamiento empezado antes de la app se añade entero, por fechas y cambios de dosis." }
+            { "icon": "calendar.badge.plus", "text": "Un tratamiento empezado antes de la app se añade entero, por fechas y cambios de dosis." },
+            { "icon": "gearshape", "text": "Cómo activarlo: «Medicación» → elige el fármaco y cada cuánto lo tomas. Después, anotar una dosis es un toque." }
           ],
           "footnote": "Formora es un rastreador, no un dispositivo médico. Las decisiones sobre dosis y pauta son tuyas y de tu médico.",
-          "primary": { "label": "Abrir estadísticas", "action": "open:statistics" },
+          "primary": { "label": "Abrir ajustes de medicación", "action": "open:settings/medication" },
           "secondary": "Ahora no"
         }
       }
