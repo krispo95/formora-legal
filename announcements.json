@@ -8,7 +8,7 @@
       "starts": "2026-10-14",
       "ends": "2026-12-31",
       "audience": {
-        "channels": ["debug"],
+        "channels": ["debug", "testflight"],
         "min_build": 36
       },
       "content": {
