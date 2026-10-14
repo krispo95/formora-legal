@@ -1,0 +1,44 @@
+{
+  "announcements": [
+    {
+      "id": "debug-smoke-2026-10-14",
+      "style": "card",
+      "icon": "antenna.radiowaves.left.and.right",
+      "tint": "periwinkle",
+      "starts": "2026-10-14",
+      "ends": "2026-12-31",
+      "audience": {
+        "channels": ["debug"],
+        "min_build": 36
+      },
+      "content": {
+        "ru": {
+          "title": "Окно прилетело с сервера",
+          "body": "Этот текст лежит в announcements.json на GitHub Pages — приложение забрало его при запуске. Видно только в debug-сборке.",
+          "bullets": [
+            { "icon": "arrow.down.circle", "text": "Файл скачивается при каждом запуске" },
+            { "icon": "person.2", "text": "Кому показывать — решают правила в том же файле" }
+          ],
+          "primary": { "label": "Понятно", "action": "dismiss" },
+          "secondary": "Закрыть"
+        },
+        "en": {
+          "title": "This window came from the file",
+          "body": "The text lives in announcements.json on GitHub Pages and was fetched at launch. Debug builds only.",
+          "bullets": [
+            { "icon": "arrow.down.circle", "text": "The file is fetched on every launch" },
+            { "icon": "person.2", "text": "Who sees it is decided by rules in the same file" }
+          ],
+          "primary": { "label": "Got it", "action": "dismiss" },
+          "secondary": "Close"
+        },
+        "es": {
+          "title": "Esta ventana viene del archivo",
+          "body": "El texto está en announcements.json en GitHub Pages y se descargó al abrir la app. Solo en compilaciones debug.",
+          "primary": { "label": "Entendido", "action": "dismiss" },
+          "secondary": "Cerrar"
+        }
+      }
+    }
+  ]
+}
