@@ -1,10 +1,10 @@
 {
   "announcements": [
     {
-      "id": "debug-smoke-2026-10-14",
-      "style": "card",
-      "icon": "antenna.radiowaves.left.and.right",
-      "tint": "periwinkle",
+      "id": "meds-course-2026-10",
+      "style": "sheet",
+      "icon": "syringe",
+      "tint": "medication",
       "starts": "2026-10-14",
       "ends": "2026-12-31",
       "audience": {
@@ -13,30 +13,42 @@
       },
       "content": {
         "ru": {
-          "title": "Окно прилетело с сервера",
-          "body": "Этот текст лежит в announcements.json на GitHub Pages — приложение забрало его при запуске. Видно только в debug-сборке.",
+          "title": "Оземпик теперь виден на графике",
+          "body": "Семаглутид, тирзепатид, лираглутид — под каким бы именем вы его ни принимали, Formora умеет вести курс целиком.",
           "bullets": [
-            { "icon": "arrow.down.circle", "text": "Файл скачивается при каждом запуске" },
-            { "icon": "person.2", "text": "Кому показывать — решают правила в том же файле" }
+            { "icon": "chart.xyaxis.line", "text": "Дозы идут полоской под графиком веса: изменение линии оказывается рядом с тем, что вы приняли." },
+            { "icon": "calendar.badge.clock", "text": "Formora считает, когда следующая доза, и может напомнить за день." },
+            { "icon": "arrow.up.right", "text": "Подъём дозы 0,25 → 0,5 → 1 мг отмечается на графике, так что видно, на какой ступени вес пошёл." },
+            { "icon": "calendar.badge.plus", "text": "Курс, начатый до приложения, добавляется целиком — по датам и изменениям дозы, а не по одному уколу." }
           ],
-          "primary": { "label": "Понятно", "action": "dismiss" },
-          "secondary": "Закрыть"
+          "footnote": "Formora — трекер, а не медицинский прибор. Решения о дозе и схеме остаются за вами и вашим врачом.",
+          "primary": { "label": "Посмотреть статистику", "action": "open:statistics" },
+          "secondary": "Не сейчас"
         },
         "en": {
-          "title": "This window came from the file",
-          "body": "The text lives in announcements.json on GitHub Pages and was fetched at launch. Debug builds only.",
+          "title": "Your Ozempic now shows on the chart",
+          "body": "Semaglutide, tirzepatide, liraglutide — whichever name you take it under, Formora can follow the whole course.",
           "bullets": [
-            { "icon": "arrow.down.circle", "text": "The file is fetched on every launch" },
-            { "icon": "person.2", "text": "Who sees it is decided by rules in the same file" }
+            { "icon": "chart.xyaxis.line", "text": "Doses run along the bottom of the weight chart, so a change in the line sits next to what you took." },
+            { "icon": "calendar.badge.clock", "text": "Formora works out when the next dose is due and can remind you a day ahead." },
+            { "icon": "arrow.up.right", "text": "A step up from 0.25 to 0.5 to 1 mg is marked, so you can see which rung the weight moved on." },
+            { "icon": "calendar.badge.plus", "text": "A course you started before the app goes in at once — from its dates and dose changes, not one injection at a time." }
           ],
-          "primary": { "label": "Got it", "action": "dismiss" },
-          "secondary": "Close"
+          "footnote": "Formora is a tracker, not a medical device. Dose and schedule decisions belong to you and your doctor.",
+          "primary": { "label": "Open Statistics", "action": "open:statistics" },
+          "secondary": "Not now"
         },
         "es": {
-          "title": "Esta ventana viene del archivo",
-          "body": "El texto está en announcements.json en GitHub Pages y se descargó al abrir la app. Solo en compilaciones debug.",
-          "primary": { "label": "Entendido", "action": "dismiss" },
-          "secondary": "Cerrar"
+          "title": "Tu Ozempic ya se ve en la gráfica",
+          "body": "Semaglutida, tirzepatida, liraglutida: con el nombre que la tomes, Formora puede seguir todo el tratamiento.",
+          "bullets": [
+            { "icon": "chart.xyaxis.line", "text": "Las dosis van en una franja bajo la gráfica de peso, junto al cambio que les corresponde." },
+            { "icon": "calendar.badge.clock", "text": "Formora calcula cuándo toca la siguiente dosis y puede avisarte un día antes." },
+            { "icon": "calendar.badge.plus", "text": "Un tratamiento empezado antes de la app se añade entero, por fechas y cambios de dosis." }
+          ],
+          "footnote": "Formora es un rastreador, no un dispositivo médico. Las decisiones sobre dosis y pauta son tuyas y de tu médico.",
+          "primary": { "label": "Abrir estadísticas", "action": "open:statistics" },
+          "secondary": "Ahora no"
         }
       }
     }
